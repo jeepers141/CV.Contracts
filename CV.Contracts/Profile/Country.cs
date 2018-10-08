@@ -2,15 +2,14 @@ namespace CV.Contracts.Profile
 {
     public class Country : ICountry
     {
-        private readonly string _code;
-
         public Country(string code, string name)
         {
-            _code = code;
+            Code = code;
             Name = name;
         }
 
+        public string Code { get; private set; }
         public string Name { get; private set; }
-        public string ApiUrl => $"https://www.countryflags.io/{_code}/"; 
+        public string ApiUrl => $"https://www.countryflags.io/{Code}/"; 
     }
 }
