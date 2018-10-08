@@ -2,9 +2,9 @@ using CV.Contracts.Profile;
 using Shouldly;
 using Xunit;
 
-namespace Contract.Unittests
+namespace CV.Contracts.UnitTests
 {
-    public class UnitTest1
+    public class CountryUnitTests
     {
         [Fact]
         public void Given_CountryCode_ShouldReturn_ValidFlagApiUrl()
