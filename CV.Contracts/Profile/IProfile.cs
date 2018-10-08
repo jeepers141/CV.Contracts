@@ -8,8 +8,9 @@ namespace CV.Contracts.Profile
         string FirstName { get; set; }
         string LastName { get; set; }
         DateTime DateOfBirth { get; set; }
-        string CountryOfBirth { get; set; }
-        string CountryOfResidence { get; set; }
         IEnumerable<Language> Languages { get; set; }
+        Country CountryOfBirth { get; set; }
+        Country CountryOfResidence { get; set; }
+
     }
 }
