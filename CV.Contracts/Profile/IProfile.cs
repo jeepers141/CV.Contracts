@@ -1,13 +1,15 @@
 using System;
+using System.Collections.Generic;
 
 namespace CV.Contracts.Profile
 {
-    public interface IProfile
+    public interface IProfile : IContact
     {
         string FirstName { get; set; }
         string LastName { get; set; }
-        ContactDetails ContactDetails { get; set; }
         DateTime DateOfBirth { get; set; }
-        SocialMedia SocialMedia { get; set; }
+        string CountryOfBirth { get; set; }
+        string CountryOfResidence { get; set; }
+        IEnumerable<Language> Languages { get; set; }
     }
 }

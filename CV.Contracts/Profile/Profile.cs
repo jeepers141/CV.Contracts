@@ -1,4 +1,5 @@
 using System;
+using System.Collections.Generic;
 
 namespace CV.Contracts.Profile
 {
@@ -9,5 +10,8 @@ namespace CV.Contracts.Profile
         public ContactDetails ContactDetails { get; set; }
         public DateTime DateOfBirth { get; set; }
         public SocialMedia SocialMedia { get; set; }
+        public string CountryOfBirth { get; set; }
+        public string CountryOfResidence { get; set; }
+        public IEnumerable<Language> Languages { get; set; }
     }
 }
