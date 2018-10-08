@@ -2,10 +2,8 @@ namespace CV.Contracts.Profile
 {
     public interface ICountry
     {
-        string Name { get; set; }
+        string Name { get; }
 
         string ApiUrl { get; }
-
-        string Code { set; }
     }
 }
